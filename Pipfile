@@ -1,0 +1,29 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+alembic = "*"
+"beautifulsoup4" = "*"
+google-api-python-client = "*"
+dominate = "*"
+itsdangerous = "*"
+nameparser = "*"
+requests = "*"
+"oauth2client" = "*"
+visitor = "*"
+Flask = "*"
+Flask-Bootstrap = "*"
+Flask-SQLAlchemy = "*"
+Flask-WTF = "*"
+Flask-Login = "*"
+"Jinja2" = "*"
+MarkupSafe = "*"
+Werkzeug = "*"
+SQLAlchemy = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.6"
