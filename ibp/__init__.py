@@ -4,7 +4,7 @@ from datetime import timedelta
 
 import logging
 
-from ConfigParser import SafeConfigParser
+from configparser import ConfigParser
 
 import flask
 from flask import Flask
@@ -13,7 +13,7 @@ from flask_wtf.csrf import CSRFProtect
 from flask_bootstrap import Bootstrap
 from flask_sqlalchemy import SQLAlchemy
 
-config = SafeConfigParser()
+config = ConfigParser()
 
 flask_env = os.getenv('FLASK_ENV', 'development')
 if flask_env == 'production':

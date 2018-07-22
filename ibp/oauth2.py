@@ -1,5 +1,5 @@
 import threading
-from urlparse import urljoin
+from urllib.parse import urljoin
 
 import oauth2client.client as oauth2client
 

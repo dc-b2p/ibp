@@ -1,6 +1,5 @@
 import urllib
 import argparse
-import itertools
 
 from bs4 import BeautifulSoup
 
@@ -55,7 +54,7 @@ def main():
     columns = ['Last Name', 'First Name', 'TDCJ Number']
 
     entries = generate_entries()
-    entries = itertools.imap(process_entry, entries)
+    entries = map(process_entry, entries)
 
     with open(args.outfilename, 'w') as outfile:
         for entry in entries:
